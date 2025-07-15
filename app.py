@@ -21,7 +21,7 @@ col1, col2, = st.columns(2)
 
 
 with col1 :
-    with st.container() :
+    with st.container(border=True) :
         st.subheader('D')
         D = st.slider("D", value=10, min_value = 0, max_value = 64, label_visibility = 'hidden')
         D_T_score = data.loc[data['D'] == D, 'T'].values[0]
