@@ -24,19 +24,18 @@ with col1 :
     with st.container(border=True) :
         st.subheader('D')
         D = st.number_input("D", value=None,min_value = 0, max_value = 64, label_visibility = 'hidden')
-        D_T_score = data.loc[data['D'] == D, 'T'].values[0]
 
         if button : 
+            D_T_score = data.loc[data['D'] == D, 'T'].values[0]
             st.subheader(f'{D_T_score}점')
 
 with col2 :
     with st.container(border=True) :
         st.subheader('I')
         I = st.number_input("I", value=None, min_value = 0, max_value = 64, label_visibility = 'hidden')
-        I_T_score = data.loc[data['I'] == I, 'T'].values[0]
-        
         
         if button :
+            I_T_score = data.loc[data['I'] == I, 'T'].values[0]
             st.subheader(f'{I_T_score}점')
 
 col3, col4 = st.columns(2)
@@ -46,9 +45,9 @@ with col3 :
     with st.container(border=True) :
         st.subheader('S')
         S = st.number_input("S", value=None, min_value = 0, max_value = 64, label_visibility = 'hidden')
-        S_T_score = data.loc[data['S'] == S, 'T'].values[0]
             
         if button : 
+            S_T_score = data.loc[data['S'] == S, 'T'].values[0]
             st.subheader(f'{S_T_score}점')
 
 
@@ -56,7 +55,7 @@ with col4 :
     with st.container(border=True) :
         st.subheader('C')
         C = st.number_input("C", value=None, min_value = 0, max_value = 64, label_visibility = 'hidden')
-        C_T_score = data.loc[data['C'] == C, 'T'].values[0]
 
         if button:
+            C_T_score = data.loc[data['C'] == C, 'T'].values[0]
             st.subheader(f'{C_T_score}점')
