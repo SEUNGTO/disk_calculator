@@ -15,7 +15,7 @@ st.caption('written by Jung Su-In')
 st.divider()
 
 
-button = st.button('점수 환산 결과 보기')
+button = st.button('결과 보기')
 
 col1, col2, = st.columns(2)
 
