@@ -30,7 +30,7 @@ with col1 :
             st.subheader(f'{D_T_score}점')
 
 with col2 :
-    with st.container() :
+    with st.container(border=True) :
         st.subheader('I')
         I = st.slider("I", value=10, min_value = 0, max_value = 64, label_visibility = 'hidden')
         I_T_score = data.loc[data['I'] == I, 'T'].values[0]
@@ -43,7 +43,7 @@ col3, col4 = st.columns(2)
 
 with col3 :
 
-    with st.container() :
+    with st.container(border=True) :
         st.subheader('S')
         S = st.slider("S", value=10, min_value = 0, max_value = 64, label_visibility = 'hidden')
         S_T_score = data.loc[data['S'] == S, 'T'].values[0]
@@ -53,7 +53,7 @@ with col3 :
 
 
 with col4 :
-    with st.container() :
+    with st.container(border=True) :
         st.subheader('C')
         C = st.slider("C", value=10, min_value = 0, max_value = 64, label_visibility = 'hidden')
         C_T_score = data.loc[data['C'] == C, 'T'].values[0]
