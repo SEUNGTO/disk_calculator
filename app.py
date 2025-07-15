@@ -23,7 +23,7 @@ col1, col2, = st.columns(2)
 with col1 :
     with st.container(border=True) :
         st.subheader('D')
-        D = st.slider("D", value=10, min_value = 0, max_value = 64, label_visibility = 'hidden')
+        D = st.number_input("D", value=10, min_value = 0, max_value = 64, label_visibility = 'hidden')
         D_T_score = data.loc[data['D'] == D, 'T'].values[0]
 
         if button : 
@@ -32,7 +32,7 @@ with col1 :
 with col2 :
     with st.container(border=True) :
         st.subheader('I')
-        I = st.slider("I", value=10, min_value = 0, max_value = 64, label_visibility = 'hidden')
+        I = st.number_input("I", value=10, min_value = 0, max_value = 64, label_visibility = 'hidden')
         I_T_score = data.loc[data['I'] == I, 'T'].values[0]
         
         
@@ -45,7 +45,7 @@ with col3 :
 
     with st.container(border=True) :
         st.subheader('S')
-        S = st.slider("S", value=10, min_value = 0, max_value = 64, label_visibility = 'hidden')
+        S = st.number_input("S", value=10, min_value = 0, max_value = 64, label_visibility = 'hidden')
         S_T_score = data.loc[data['S'] == S, 'T'].values[0]
             
         if button : 
@@ -55,7 +55,7 @@ with col3 :
 with col4 :
     with st.container(border=True) :
         st.subheader('C')
-        C = st.slider("C", value=10, min_value = 0, max_value = 64, label_visibility = 'hidden')
+        C = st.number_input("C", value=10, min_value = 0, max_value = 64, label_visibility = 'hidden')
         C_T_score = data.loc[data['C'] == C, 'T'].values[0]
 
         if button:
